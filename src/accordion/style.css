@@ -1,0 +1,43 @@
+.container{
+    width: 20rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+button{
+    width: 100%;
+    background-color: pink;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+p{
+    display: none;
+}
+.rectangle{
+    height: 20rem;
+    background-color: rgb(84, 84, 227);
+}
+.boxes{
+    /* border: 2px solid red; */
+    display: flex;
+    width: fit-content;
+    margin-top: -15rem;
+    float: right;
+}
+.box-one{
+    height: 7rem;
+    width: 10rem;
+    background-color: pink;
+}
+.box-two{
+    height: 7rem;
+    width: 10rem;
+    background-color: greenyellow;
+    margin: 5rem -3rem;
+}
+.box-three{
+    height: 7rem;
+    width: 10rem;
+    background-color: grey;
+}
