@@ -1,12 +1,19 @@
-import { Axios } from "axios";
+import Axios from "axios";
 import { useState } from "react";
+
 export default function UploadInfo() {
-  function uploadImage(files) {
+  const [imgUpload, setImgUpload] = useState(null);
+
+  function uploadImage() {
+    if (!imgUpload) {
+      console.error("Please select an image");
+      return;
+    }
     const formData = new FormData();
-    formData.append("file", files[0]);
-    formData.append("upload_preset", "");
+    formData.append("file", imgUpload);
+    formData.append("upload_preset", "myCloud");
     Axios.post(
-      "https://api.cloudinary.com/v1_1/myCloud/image.upload",
+      "https://api.cloudinary.com/v1_1/duc8kpcl9/image/upload",
       formData
     ).then((res) => console.log(res));
   }
@@ -17,10 +24,10 @@ export default function UploadInfo() {
         type="file"
         name="image"
         onChange={(event) => {
-          uploadImage(event.target.files);
+          setImgUpload(event.target.files[0]);
         }}
       />
-      <button>Submit</button>
+      <button onClick={uploadImage}>Submit</button>
     </div>
   );
 }
