@@ -12,10 +12,11 @@ export default function UploadInfo() {
     const formData = new FormData();
     formData.append("file", imgUpload);
     formData.append("upload_preset", "myCloud");
-    Axios.post(
+    const response = Axios.post(
       "https://api.cloudinary.com/v1_1/duc8kpcl9/image/upload",
       formData
-    ).then((res) => console.log(res));
+    ).then((res) => console.log(res.data.url));
+    
   }
 
   return (
