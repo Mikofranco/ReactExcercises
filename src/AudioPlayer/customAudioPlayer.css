@@ -1,0 +1,53 @@
+.container {
+  border: 2px solid red;
+  width: 500px;
+}
+/* customAudioPlayer.css */
+
+/* Container customization */
+.rhap_container {
+  background-color: #add9b2; /* Change background color */
+  border-radius: 10px; /* Add rounded corners */
+  padding: 10px; /* Add padding */
+}
+.rhap_svg{
+    color: #ff5722;
+}
+
+/* Main controls customization */
+.rhap_main-controls {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid red;
+}
+
+/* Play/Pause button customization */
+.rhap_play-pause-button {
+  background-color: #4caf50; /* Change button color */
+  border-radius: 50%; /* Make the button round */
+}
+
+/* Skip buttons customization */
+.rhap_skip-button {
+  background-color: #2196f3; /* Change button color */
+}
+
+/* Progress section customization */
+.rhap_progress-section {
+  color: #333; /* Change text color */
+}
+
+/* Volume controls customization */
+.rhap_volume-controls {
+  color: #ff5722; /* Change icon color */
+}
+
+/* Additional controls customization */
+.rhap_additional-controls {
+  display: none; /* Hide additional controls */
+}
+
+/* Shuffle button customization */
+.rhap_repeat-button {
+  background-color: #ffeb3b; /* Change button color */
+}
